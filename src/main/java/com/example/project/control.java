@@ -21,15 +21,15 @@ public class control extends screen {
 //array cannot be empty
 //Perhaps we need another function or something
 
-    public void verifyLogin(){
+    /*public void verifyLogin(){
         if (StudentID == true){ //must read from studentID data
             return "access granted";
         }
-        else(){
+        else{
             return "login failed";
         }
 
-    }
+    }*/
 
     public void processDrive(){
 
@@ -40,8 +40,9 @@ public class control extends screen {
     }
 
     public void exitApp(){
-        System.exit();
+
+        //System.exit();
     }
 }
 
-}
+

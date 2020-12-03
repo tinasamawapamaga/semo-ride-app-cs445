@@ -17,7 +17,7 @@ public class ride extends control{
         //whether request was successful
         return true;
     }
-
+/*
     public int startDrive() {
         //need to set a timer and some sort of distance reader
     }
@@ -40,5 +40,5 @@ public class ride extends control{
 
     public double chargeRider(){
 
-    }
+    }*/
 }

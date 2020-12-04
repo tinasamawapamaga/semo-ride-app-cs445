@@ -1,5 +1,7 @@
 package com.example.project;
 
+import java.util.Scanner;
+
 public class control extends screen {
     private String name;
     private char menu[];
@@ -17,19 +19,29 @@ public class control extends screen {
         this.location=new String[5];
         this.payment=0;
     }
-//need to set menu and options choices
-//array cannot be empty
-//Perhaps we need another function or something
 
-    /*public void verifyLogin(){
-        if (StudentID == true){ //must read from studentID data
-            return "access granted";
-        }
-        else{
-            return "login failed";
-        }
+//createAccount moved from account class to
+//control class
+    public void createAccount(){ //putting in rough code so we have something to work with
+        Scanner input = new Scanner(System.in);
 
-    }*/
+        System.out.println("Please enter username");
+        String username = input.nextLine();
+
+        System.out.println("Please enter your studentID");
+        int studentID = input.nextInt();
+
+        System.out.println("Please enter your first name");
+        String first = input.nextLine();
+        System.out.println("Please enter your last name");
+        String last = input.nextLine();
+
+        System.out.println("Please enter your birthday");
+        int birthday = input.nextInt();
+
+
+
+    }
 
     public void processDrive(){
 

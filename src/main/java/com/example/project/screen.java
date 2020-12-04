@@ -50,11 +50,11 @@ public class screen {
         frame.setVisible(true);
     }
 
-    public static void main(String[] args) {
+    public static void init() {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 makeScreen();
-            }  
+            }
         });
     }
 }

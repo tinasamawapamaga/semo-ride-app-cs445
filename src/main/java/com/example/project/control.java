@@ -22,7 +22,7 @@ public class control extends screen {
 
 //createAccount moved from account class to
 //control class
-    public void createAccount(){ //putting in rough code so we have something to work with
+    public account createAccount(){
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please enter username");
@@ -30,6 +30,9 @@ public class control extends screen {
 
         System.out.println("Please enter your studentID");
         int studentID = input.nextInt();
+
+        System.out.println("Please enter your driverID");
+        int driverID = input.nextInt();
 
         System.out.println("Please enter your first name");
         String first = input.nextLine();
@@ -39,8 +42,20 @@ public class control extends screen {
         System.out.println("Please enter your birthday");
         int birthday = input.nextInt();
 
+        System.out.println("Please enter your account type");
+        char acc_type = input.next().charAt(0);
 
+        System.out.println("Please enter your car model");
+        String car= input.nextLine();
 
+        System.out.println("Please choose your gender");
+        char gender = input.next().charAt(0);
+
+        System.out.println("Enter your bank account");
+        int bank_acc=input.nextInt();
+
+        account ret=new account(first,last,driverID,studentID,birthday,acc_type,car,gender,bank_acc);
+    return ret;
     }
 
     public void processDrive(){

@@ -58,11 +58,3 @@ public class screen {
         });
     }
 }
-/*register(): void
-login():void
-rideRequest():void
-history():void
-startDrive(): void
-stopDrive():void
-updateLocation():void
-public */

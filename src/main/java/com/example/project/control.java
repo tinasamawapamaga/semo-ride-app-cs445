@@ -40,8 +40,7 @@ public class control extends screen {
     }
 
     public void exitApp(){
-
-        //System.exit();
+        System.exit(0);
     }
 }
 

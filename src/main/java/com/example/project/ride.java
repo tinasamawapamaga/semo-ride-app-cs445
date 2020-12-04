@@ -2,6 +2,7 @@ package com.example.project;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.*;
+import java.time.*;
 
 public class ride extends control{
 
@@ -17,21 +18,29 @@ public class ride extends control{
         //whether request was successful
         return true;
     }
+    /*This function now returns type Instant
+    The return value will be used as a parameter
+    for the end function to calculate time*/
+    public Instant startDrive() {
+        Instant start=Instant.now();
+        return start;
+    }
+
+    public double stopDrive(Instant beginning){
+        Instant end=Instant.now();
+        Duration ride_time=Duration.between(beginning, end);
+        double duration_in_minutes=ride_time.getSeconds()/60;
+        return duration_in_minutes;
+    }
 /*
-    public int startDrive() {
-        //need to set a timer and some sort of distance reader
-    }
-
-    public int stopDrive(){
-        //timer must end
-    }
-
     public String updateLocation(){
-        //distance calcualtor may help
+        //distance calculator may help
     }
 
     public double makePayment(){
         //must read subtract from bank account not really sure what to do here
+        //yeah this bank account requires some integration which is
+        //next level
     }
 
     public void riderAssign(){
@@ -39,6 +48,7 @@ public class ride extends control{
     }
 
     public double chargeRider(){
-
+        //this function is similar to makePayment
+        //this deals with payment technology (fintec)
     }*/
 }

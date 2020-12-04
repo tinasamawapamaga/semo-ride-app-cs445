@@ -12,8 +12,7 @@ public class account  extends control{
     private String car_make;
     private char gender;
     private int backAcc;
-
-    //Two default class constructors
+//Default class constructor
     public account(){
         this.first_name= "";
         this.last_name= "";
@@ -38,7 +37,9 @@ public class account  extends control{
         this.backAcc= bankaccount;
     }
 
-    public void processRegister(){} //not sure what to do here
+    public void processRegister(){
+
+    } //not sure what to do here
 
     public void createAccount(){ //putting in rough code so we have something to work with
         Scanner userName = new Scanner(System.in);;
@@ -58,12 +59,13 @@ public class account  extends control{
     }
 
     public void login(){
-        Scanner userName = new Scanner(System.in);;
-        Scanner passWord = new Scanner(System.in);;
+        Scanner userName = new Scanner(System.in);
+        Scanner passWord = new Scanner(System.in);
+
         System.out.println("Please enter username");
-        double username = userName.nextDouble(); //look at this
+        String username = userName.nextLine();
         System.out.println("Please enter your studentID");
-        double studentID = passWord.nextDouble();
+        int studentID = passWord.nextInt();
     }
 
     public char choose_Acc_Type(){

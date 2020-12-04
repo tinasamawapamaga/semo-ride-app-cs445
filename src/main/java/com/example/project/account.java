@@ -32,14 +32,6 @@ public class account  extends control{
 
 //delete processRegister because of ambiguity
 
-    public boolean requestRide(){
-        //return True for success and
-        //false for fail (because of
-        //no driver nearby or all drivers busy
-
-        return true;
-    }
-
     public void login(){
         Scanner userName = new Scanner(System.in);
         Scanner passWord = new Scanner(System.in);

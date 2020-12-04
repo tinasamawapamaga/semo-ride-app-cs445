@@ -9,9 +9,8 @@ public class control extends screen {
     private String[] location;
     private double payment;
     private String studentID;
+
     //Default class constructors
-//Only need one constructor for this class because
-//the menu will always be the same.
     public control(){
         this.name="";
         this.menu=new char[5];

@@ -18,6 +18,7 @@ public class ride extends control{
         //whether request was successful
         return true;
     }
+
     /*This function now returns type Instant
     The return value will be used as a parameter
     for the end function to calculate time*/
@@ -51,4 +52,13 @@ public class ride extends control{
         //this function is similar to makePayment
         //this deals with payment technology (fintec)
     }*/
+
+    /*
+    A simple implementation could be to use arraylist,
+    or queue, or stack to do drivers awaiting.
+    when a driver's available, he/she's pushed into a stack
+    and when he/she's busy, popped from stack,
+    so the next user will have a pool of available driver to choose from
+    if stack is empty, riderequest will fail
+     */
 }

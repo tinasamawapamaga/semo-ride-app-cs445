@@ -96,4 +96,4 @@ As part of the PoC, your team will create a basic text and keyboard-based UI to 
 
 - Start ride/finish ride
 
-- Update locatio
+- Update location

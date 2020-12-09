@@ -2,7 +2,7 @@ package com.example.project;
 
 import java.util.Scanner;
 
-public class control {
+public class Control {
   private String name;
   private char menu[];
   private char options[];
@@ -11,7 +11,7 @@ public class control {
   private String studentID;
 
   // Default class constructors
-  public control() {
+  public Control() {
     this.name = "";
     this.menu = new char[5];
     this.options = new char[5];
@@ -21,7 +21,7 @@ public class control {
 
   // createAccount moved from account class to
   // control class
-  public account createAccount() {
+  public Account createAccount() {
     Scanner input = new Scanner(System.in);
 
     System.out.println("Please enter username");
@@ -53,8 +53,7 @@ public class control {
     System.out.println("Enter your bank account");
     int bank_acc = input.nextInt();
 
-    account ret =
-        new Account(first, last, driverID, studentID, birthday, acc_type, car, gender, bank_acc);
+    Account ret = new Account(first, last, driverID, studentID, birthday, acc_type, car, gender, bank_acc);
     return ret;
   }
 

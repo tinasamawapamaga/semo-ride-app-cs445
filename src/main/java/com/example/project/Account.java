@@ -3,9 +3,9 @@ package com.example.project;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class account {
-  private String first_name;
-  private String last_name;
+public class Account {
+  private String first_Name;
+  private String last_Name;
   private int driverID;
   private int studentID;
   private int birthday;
@@ -27,8 +27,8 @@ public class account {
       String car_make,
       char sex,
       int bankaccount) {
-    this.first_name = first;
-    this.last_name = last;
+    this.first_Name = first;
+    this.last_Name = last;
     this.driverID = driverID;
     this.studentID = studentID;
     this.birthday = bd;

@@ -1,9 +1,8 @@
 package com.example.project;
 
 import java.time.*;
-import java.util.*;
 
-public class ride extends control {
+public class Ride{
 
   private String origin;
   private int payment;

@@ -3,7 +3,7 @@ package com.example.project;
 public class RideApp {
   public static void main(String[] args) {
     try {
-      screen display = new screen();
+      Screen display = new Screen();
       display.init();
     } catch (Exception e) {
       System.out.println(e.toString());

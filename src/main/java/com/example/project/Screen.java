@@ -5,7 +5,7 @@ import java.awt.event.*;
 import java.io.*;
 import javax.swing.*;
 
-public class screen {
+public class Screen {
   private String name;
   private char menu[];
   private char option[];

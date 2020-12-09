@@ -54,7 +54,7 @@ public class control {
     int bank_acc = input.nextInt();
 
     account ret =
-        new account(first, last, driverID, studentID, birthday, acc_type, car, gender, bank_acc);
+        new Account(first, last, driverID, studentID, birthday, acc_type, car, gender, bank_acc);
     return ret;
   }
 

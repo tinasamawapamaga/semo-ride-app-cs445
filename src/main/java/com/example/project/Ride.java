@@ -31,6 +31,12 @@ public class Ride {
     double duration_in_minutes = ride_time.getSeconds() / 60;
     return duration_in_minutes;
   }
+
+  public double chargeRider(double duration_In_Minutes, double length_Of_Ride){
+    double payment = duration_In_Minutes * 0.25 + 0.5 * length_Of_Ride;
+    return payment;
+  }
+
   /*
   public String updateLocation(){
       //distance calculator may help
@@ -47,10 +53,7 @@ public class Ride {
   }
 */
 
-  public double chargeRider(double duration_In_Minutes, double length_Of_Ride){
-    double payment = duration_In_Minutes * 0.25 + 0.5 * length_Of_Ride;
-    return payment;
-  }
+
 
   /*
   A simple implementation could be to use arraylist,

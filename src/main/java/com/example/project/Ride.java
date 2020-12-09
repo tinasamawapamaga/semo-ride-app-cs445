@@ -2,7 +2,7 @@ package com.example.project;
 
 import java.time.*;
 
-public class Ride{
+public class Ride {
 
   private String origin;
   private int payment;

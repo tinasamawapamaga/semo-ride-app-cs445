@@ -53,17 +53,14 @@ public class Control {
     System.out.println("Enter your bank account");
     int bank_acc = input.nextInt();
 
-    Account ret = new Account(first, last, driverID, studentID, birthday, acc_type, car, gender, bank_acc);
+    Account ret =
+        new Account(first, last, driverID, studentID, birthday, acc_type, car, gender, bank_acc);
     return ret;
   }
 
-  public void processDrive() {
+  public void processDrive() {}
 
-  }
-
-  public void updateInfo() {
-
-  }
+  public void updateInfo() {}
 
   public void exitApp() {
     System.exit(0);

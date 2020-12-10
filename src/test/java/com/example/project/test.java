@@ -3,9 +3,10 @@ package com.example.project;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
+import org.junit.jupiter.api.Test;
+
 import java.time.Instant;
 import java.util.concurrent.TimeUnit;
-import org.junit.jupiter.api.Test;
 
 public class test {
 
@@ -23,7 +24,12 @@ public class test {
     double duration = test.stopDrive(begin);
     assertEquals(1, duration);
   }
+
   @Test
-  void empty_test() {}
+  void createAccount_test() {
+    Account stable =
+        new Account("Tin", "Le", 12345786, 1978050, 140499, 'p', "Lamborghini", 'M', 2244333);
+    assertEquals(true, stable instanceof Account);
+  }
 
 }

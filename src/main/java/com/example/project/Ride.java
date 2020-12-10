@@ -32,7 +32,7 @@ public class Ride {
     return duration_in_minutes;
   }
 
-  public double chargeRider(double duration_In_Minutes, double length_Of_Ride){
+  public double chargeRider(double duration_In_Minutes, double length_Of_Ride) {
     double payment = duration_In_Minutes * 0.25 + 0.5 * length_Of_Ride;
     return payment;
   }
@@ -43,24 +43,9 @@ public class Ride {
   }
 
   public double makePayment(){
-      //must read subtract from bank account not really sure what to do here
-      //yeah this bank account requires some integration which is
-      //next level
   }
 
   public void riderAssign(){
-
   }
-*/
-
-
-
-  /*
-  A simple implementation could be to use arraylist,
-  or queue, or stack to do drivers awaiting.
-  when a driver's available, he/she's pushed into a stack
-  and when he/she's busy, popped from stack,
-  so the next user will have a pool of available driver to choose from
-  if stack is empty, riderequest will fail
    */
 }

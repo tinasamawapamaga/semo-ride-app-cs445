@@ -37,6 +37,11 @@ public class Ride {
     return payment;
   }
 
+  public double priceEstimate(double length_Of_Ride) {
+    double payment = 1.25 * length_Of_Ride;
+    return payment;
+  }
+
   /*
   public String updateLocation(){
       //distance calculator may help

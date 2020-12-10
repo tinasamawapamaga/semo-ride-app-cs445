@@ -24,6 +24,9 @@ public class test {
     assertEquals(1, duration);
   }
   @Test
-  void empty_test() {}
+  void priceEstimate_Test() {
+    Ride test = new Ride();
+    assertEquals(15, test.priceEstimate(12));
+  }
 
 }

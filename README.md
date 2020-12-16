@@ -5,7 +5,7 @@ that will allow students on campus to participate either
 as a passenger or rider.
  - There will be two main classes for the software: rider and
 passenger.
-
+## Main Contributor: Tin Le. And aid, Tim.
 ## Detailed Description
 Taking a Ride
 Students can sign up for RedhawkRide by typing their student id and bank account details into the app.
